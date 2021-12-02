@@ -1,8 +1,8 @@
 {
-  "name": "medusa-admin",
+  "name": "gatsby-theme-medusa-admin",
   "private": true,
-  "description": "A proprietary Admin system to manage Medusa Stores",
-  "version": "0.1.0",
+  "description": "Gatsby theme for Medusa Admin",
+  "version": "1.0.0",
   "author": "@medusajs",
   "resolutions": {
     "devcert": "1.1.0"

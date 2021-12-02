@@ -12,7 +12,6 @@
     "@material-ui/icons": "^4.11.2",
     "@rebass/forms": "^4.0.6",
     "@rebass/preset": "^4.0.5",
-    "@storybook/theming": "^5.3.19",
     "@svgr/webpack": "^5.4.0",
     "axios": "^0.19.2",
     "copy-to-clipboard": "^3.3.1",
@@ -52,11 +51,6 @@
   },
   "devDependencies": {
     "@babel/core": "^7.10.2",
-    "@storybook/addon-actions": "^5.3.19",
-    "@storybook/addon-backgrounds": "^5.3.19",
-    "@storybook/addon-links": "^5.3.19",
-    "@storybook/addons": "^5.3.19",
-    "@storybook/react": "^5.3.19",
     "babel-loader": "^8.1.0",
     "prettier": "2.0.5"
   },
@@ -67,15 +61,13 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "storybook": "start-storybook -p 6006",
-    "build-storybook": "build-storybook"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/medusajs/admin"
+    "url": "https://github.com/medusajs/gatsby-theme-medusa-admin"
   },
   "bugs": {
-    "url": "https://github.com/medusajs/admin/issues"
+    "url": "https://github.com/medusajs/gatsby-theme-medusa-admin/issues"
   }
 }

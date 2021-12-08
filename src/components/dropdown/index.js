@@ -1,10 +1,8 @@
-import React, { useState, useRef, useEffect } from "react"
 import styled from "@emotion/styled"
 import _ from "lodash"
+import React, { useEffect, useRef, useState } from "react"
 import { Box, Flex } from "rebass"
-
 import { ReactComponent as Ellipsis } from "../../assets/svg/ellipsis.svg"
-
 import Button from "../button"
 
 export const DropdownContainer = styled(Box)`
@@ -129,7 +127,6 @@ const Dropdown = ({
         dropUp={dropUp}
         leftAlign={leftAlign}
         minWidth={dropdownWidth || "160px"}
-        ref={ref}
         isOpen={isOpen}
         topPlacement={topPlacement}
         {..._.pick(rest, spacingProps)}

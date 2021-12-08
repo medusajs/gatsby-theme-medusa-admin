@@ -1,6 +1,7 @@
 import React, { useState } from "react"
-import Button from "./index"
+import { storiesOf } from "@storybook/react"
 
+import Button from "./index"
 
 export default {
   title: `Button`,

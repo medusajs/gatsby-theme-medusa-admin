@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Medusa Admin`,
-    description: `Admin system for Medusa`,
+    description: `Admin system for Medusa - The open-source Shopify alternative.`,
     author: `@medusajs`,
   },
   plugins: [
@@ -14,6 +14,14 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `medusa-admin`,
+        short_name: `medusa`,
+        icon: require.resolve(`./src/images/logo.svg`),
+      },
+    },
     `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-plugin-create-client-paths`,

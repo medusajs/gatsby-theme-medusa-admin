@@ -2,7 +2,7 @@
   "name": "gatsby-theme-medusa-admin",
   "private": false,
   "main": "index.js",
-  "version": "1.0.7",
+  "version": "1.0.8-canary.0",
   "description": "Gatsby theme for Medusa Admin",
   "dependencies": {
     "@emotion/core": "^10.0.28",

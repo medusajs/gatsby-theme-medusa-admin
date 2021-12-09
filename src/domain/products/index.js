@@ -1,32 +1,26 @@
-import React, { useState, useCallback, useEffect } from "react"
+import styled from "@emotion/styled"
+import { Router } from "@reach/router"
+import { Input } from "@rebass/forms"
 import { Link, navigate } from "gatsby"
 import _ from "lodash"
-import { Flex, Text, Box, Image } from "rebass"
-import { Input } from "@rebass/forms"
-import { Router } from "@reach/router"
-import Medusa from "../../services/api"
-
+import qs from "query-string"
+import React, { useEffect, useState } from "react"
+import { Box, Flex, Image, Text } from "rebass"
 import ImagePlaceholder from "../../assets/svg/image-placeholder.svg"
-
+import Button from "../../components/button"
 import Spinner from "../../components/spinner"
 import {
-  Table,
-  TableHead,
+  DefaultCellContent, Table, TableBody, TableDataCell, TableHead,
   TableHeaderCell,
-  TableHeaderRow,
-  TableBody,
-  TableRow,
-  TableDataCell,
-  TableLinkRow,
-  DefaultCellContent,
+  TableHeaderRow, TableRow
 } from "../../components/table"
-
-import New from "./new"
-import Details from "./details"
 import useMedusa from "../../hooks/use-medusa"
-import Button from "../../components/button"
-import qs from "query-string"
-import styled from "@emotion/styled"
+import Medusa from "../../services/api"
+import Details from "./details"
+import New from "./new"
+
+
+
 
 const LinkWrapper = styled(Link)`
   width: 100%;
@@ -45,7 +39,7 @@ const LinkWrapper = styled(Link)`
   display: flex;
 `
 
-const ProductIndex = () => {
+const ProductIndex = ({pageTitle = "Products"}) => {
   const filtersOnLoad = qs.parse(window.location.search)
 
   if (!filtersOnLoad.offset) {
@@ -221,7 +215,7 @@ const ProductIndex = () => {
     <Flex flexDirection="column" pb={5} pt={5}>
       <Flex>
         <Text mb={3} fontSize={20} fontWeight="bold">
-          Products
+          {pageTitle}
         </Text>
       </Flex>
       <Flex>

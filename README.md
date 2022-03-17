@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://www.medusa-commerce.com">
+  <a href="https://www.medusajs.com/">
     <img alt="Medusa" src="https://user-images.githubusercontent.com/7554214/129161578-19b83dc8-fac5-4520-bd48-53cba676edd2.png" width="100" />
   </a>
 </p>
@@ -47,7 +47,7 @@ Medusa is an open-source headless commerce engine that enables developers to cre
     curl localhost:9000/store/products | python -m json.tool
     ```
 
-After these four steps and only a couple of minutes, you now have a complete commerce engine running locally. You may now explore [the documentation](https://docs.medusa-commerce.com/api) to learn how to interact with the Medusa API. You may also add [plugins](https://github.com/medusajs/medusa/tree/master/packages) to your Medusa store by specifying them in your `medusa-config.js` file.
+After these four steps and only a couple of minutes, you now have a complete commerce engine running locally. You may now explore [the documentation](https://docs.medusajs.com/api/store/auth) to learn how to interact with the Medusa API. You may also add [plugins](https://github.com/medusajs/medusa/tree/master/packages) to your Medusa store by specifying them in your `medusa-config.js` file.
 
 ## 🗄 Setting up Admin
 
@@ -138,7 +138,7 @@ Licensed under the [MIT License](https://github.com/medusajs/medusa/blob/master/
 ## Thank you!
 
 <p>
-  <a href="https://www.medusa-commerce.com">
+  <a href="https://www.medusajs.com/">
     Website
   </a> 
   |
@@ -150,7 +150,7 @@ Licensed under the [MIT License](https://github.com/medusajs/medusa/blob/master/
     Twitter
   </a>
   |
-  <a href="https://docs.medusa-commerce.com">
+  <a href="https://docs.medusajs.com/">
     Docs
   </a>
 </p>
